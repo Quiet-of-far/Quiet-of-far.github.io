@@ -43,7 +43,7 @@ h3 {
     margin: 0;
 }
 .brand-title {
-    text-transform: uppercase;
+    text-transform: none;
 }
 .brand-tagline {
     font-weight: 300;
