@@ -38,6 +38,11 @@ h3 {
     color: #fff;
 }
 
+.shadow {
+    margin-bottom: 0.8em;
+    border-radius: 50%;
+}
+
 .brand-title,
 .brand-tagline {
     margin: 0;
@@ -250,7 +255,13 @@ h3 {
 
 .footer {
     padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
+
 .footer a {
     color: #ccc;
     font-size: 80%;
