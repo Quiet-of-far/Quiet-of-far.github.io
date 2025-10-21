@@ -128,10 +128,10 @@ h3 {
 .post-category-other {
   background: #999;
 }
-.post-category-design {
-  background: #5aba59;
+.post-category-nas {
+  background: #57c0da;
 }
-.post-category-pure {
+/* .post-category-pure {
   background: #4d85d1;
 }
 .post-category-yui {
@@ -139,7 +139,7 @@ h3 {
 }
 .post-category-js {
   background: #df2d4f;
-}
+} */
 
 .post-images {
   margin: 1em 0;
