@@ -279,9 +279,15 @@ h3 {
   color: #ccc;
   font-size: 80%;
 }
+
 .footer .pure-menu a:hover,
 .footer .pure-menu a:focus {
   background: none;
+}
+
+.footer .footer-text {
+  margin-top: 3em;
+  margin-bottom: 0.5em;
 }
 
 @media (min-width: 48em) {
