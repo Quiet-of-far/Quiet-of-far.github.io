@@ -8,21 +8,31 @@
     <title>Quiet's Blog &ndash; Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <style>
-        .footer {
-            padding: 1em 0;
-            text-align: center;
+        html, body {
+            height: 100%;
+            margin: 0;
         }
 
-        @media (min-width: 48em) {
-            .footer {
-                text-align: center;
-                position: fixed;
-                bottom: 0;
-                width: 75%;
-                left: 25%;
-            }
+        .content {
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content > div {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .posts {
+            flex: 1; 
+        }
+        
+        .footer {
+            margin-top: auto;
         }
     </style>
 </head>
@@ -80,7 +90,7 @@
                         <div class="notiborderglow"></div>
                         <div class="notititle"><a href="Archive/25-10-21-OEC&Synology.html">记一则矿渣OEC的黑群晖体验</a></div>
                         <div class="notitime">
-                            2025-10-21
+                            2025-11-21
                             <a class="post-category post-category-nas" href="tag/nas.html">NAS</a>
                         </div>
                         <div class="notibody">自略微接触数码以来，我了解到各种神秘圈子，诸如机圈、路由圈、NAS圈，这三者看着没什么关联，实则隐隐中又略有交集......</div>
@@ -91,17 +101,17 @@
                         <div class="notiborderglow"></div>
                         <div class="notititle"><a href="Archive/25-10-16-HelloWorld.html">Hello World</a></div>
                         <div class="notitime">
-                            2025-10-16
+                            2025-11-21
                             <a class="post-category post-category-other" href="tag/other.html">Other</a>
                         </div>
                         <div class="notibody">消耗了大量的时间，终于憋出来了，其实我想写blog久矣，但严重的拖延症和自身能力不足 <del>(其实还有沉迷游戏</del> 使得这个计划直到最近才初具雏形......</div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="pure-menu pure-menu-horizontal">
-                <p class="footer-text">Copyright &copy; 2025 &nbsp;Quiet's Blog</p>
+                <div class="footer">
+                    <div class="pure-menu">
+                        <p class="footer-text">Copyright &copy; 2025 &nbsp;Quiet's Blog</p>
+                    </div>
+                </div>
             </div>
         </div>
 </body>

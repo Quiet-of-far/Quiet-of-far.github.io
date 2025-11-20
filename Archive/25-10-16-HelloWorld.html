@@ -8,21 +8,31 @@
     <title>Quiet's Blog &ndash; Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <style>
-        .footer {
-            padding: 1em 0;
-            text-align: center;
+        html, body {
+            height: 100%;
+            margin: 0;
         }
 
-        @media (min-width: 48em) {
-            .footer {
-                text-align: center;
-                position: fixed;
-                bottom: 0;
-                width: 75%;
-                left: 25%;
-            }
+        .content {
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content > div {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .posts {
+            flex: 1; 
+        }
+        
+        .footer {
+            margin-top: auto;
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -59,12 +69,18 @@
                     <textarea id="markdown-source" style="display:none;">
 
 # Hello World!
-### 消耗了许多时间精力，终于憋出来了，其实我想写Blog久矣，但严重的拖延症和自身能力不足 ~~(其实还有沉迷游戏~~ 使得这个计划直到最近才初具雏形，事实上我是希望能通过写Blog来抑制拖延症的(
+### 消耗了许多时间精力，终于憋出来了，其实我想写Blog久矣，但严重的拖延症和自身能力不足 ~~(其实还有沉迷游戏~~ 使得这个计划直到如今才初具雏形，由于我既不想直接套模板也不想过度依赖AI，如你所见，这是一个相当简陋的blog，用着相当原始实现方式，以至于我在刚完成的那一刻就打算重构了
+### 事实上我是希望能通过写Blog来抑制拖延症的(
 ### <img class="pure-img-responsive" src="/img/szyd.JPEG" alt="szyd">
 - 他是对的.jpeg
 ## 我为什么要写Blog
-> ### 在你继续读下去之前
-### 正如上文提到的，我试图通过写Blog来解决我的拖延问题，但显然收效甚微，我写Blog的原因之二就是简单记录一些我认为有意义的东西，留档也好教程也好，都是加深记忆的方式，我希望自己能在这个过程中再次学到些什么，原因之三就是想稍微了解一下web开发，据我同专业的初中同学说他们有学，看到他展示的成果也是相当不错，一方面憧憬，一方面疑惑，为何我们不学，这个疑问在后来开始上爬虫课时愈发加深，我认为至少了解一些web基础应该是能对学习爬虫有所帮助的 ~~(实则不然~~。
+> ### 在继续读下去之前，我需要提醒一下，我的Blog可能含有大量主观内容同时掺杂各种错漏，不建议盲目相信其中的任何一句话，并且可以预见的是，以本人的水平，在未来相当长的一段时间内，我都难以产出高质量内容，如果您都能接受亦或是相信自己有足够的判断能力，那么，迎接您的将是:
+>
+> ### `低质内容 | 情绪发泄 | 漏洞百出 | 智熄时刻`
+>
+> # *Welcome to my Blog*
+### 正如前文所说，我写blog的原因之一是试图通过这种方式来解决自己的拖延问题，不过收效甚微就是了，而原因之二，就是想稍微了解一下web开发，据同专业的初中同学所说他们大一便有学，看到他展示的成果似乎相当不错，一方面憧憬，一方面疑惑，为何我们不学，这个疑问在后来开始上爬虫课时愈发加深，我认为至少了解一些web基础应该是能对学习爬虫有所帮助的 ~~(实则不然~~。
+### 原因之三——简单记录一些我认为有意义的东西，留档也好教程也好，都是加深记忆的方式，我希望自己能在这个过程中再次学到些什么，每当看到那些大佬出炉的牛逼项目我都会感慨，为什么不是我，我就像一只社区里的蚊子，无法为社区做出一丁点贡献，拿大佬的东西框框用，完事了嗡嗡叫，外人眼里还觉得我很厉害，或许通过blog能让大家了解到我的真实水平，而我也会争取，有朝一日能在blog里介绍我自己的项目内容。
 
 
                     </textarea>

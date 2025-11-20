@@ -8,21 +8,31 @@
     <title>Quiet's Blog &ndash; Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <style>
-        .footer {
-            padding: 1em 0;
-            text-align: center;
+        html, body {
+            height: 100%;
+            margin: 0;
         }
 
-        @media (min-width: 48em) {
-            .footer {
-                text-align: center;
-                position: fixed;
-                bottom: 0;
-                width: 75%;
-                left: 25%;
-            }
+        .content {
+            min-height: 100vh; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content > div {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .posts {
+            flex: 1; 
+        }
+        
+        .footer {
+            margin-top: auto;
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
